@@ -30,13 +30,13 @@ export default function App() {
       if (!isNaN(angle)) {
         switch (selectedFunction) {
           case 'sin':
-            result = Math.sin(angle);
+            result = Math.sin(angle * Math.PI / 180);
             break;
           case 'cos':
-            result = Math.cos(angle);
+            result = Math.cos(angle * Math.PI / 180);
             break;
           case 'tan':
-            result = Math.tan(angle);
+            result = Math.tan(angle * Math.PI / 180);
             break;
           case 'log':
             if (angle > 0) {
